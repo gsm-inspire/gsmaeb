@@ -19,7 +19,6 @@ Installing GsmaeB from source, like any Beamer theme, involves four easy steps:
    or move the `*.sty` files to a folder in your TeX path instead (might require
    `sudo` rights).
 4. **Use the theme for your presentation** by declaring `\usetheme{gsmaeb}` in the preamble of your Beamer document.
-5. **For best results** install Mozilla's [Fira Sans](https://github.com/bBoxType/FiraSans).
 
 ## Usage
 
@@ -33,20 +32,38 @@ The following code shows a minimal example of a Beamer presentation using GsmaeB
 \author{Gsm Inspire \LaTeX Team}
 \institute{Guanghua School of Management, Peking University}
 \begin{document}
-   \maketitle
+    \maketitle
 
 
-   \section{First Section}
-   \begin{frame}{First Frame}
-      Hello, world!
-   \end{frame}
+    \section{First Section}
+    \begin{frame}{First Frame}
+        Hello, world!
+    \end{frame}
 \end{document}
 ```
 
 ## Development
 
 This theme is based on [Metropolis](https://github.com/matze/mtheme). If you've got questions about implementation
-details, the [manual][] of Metropolis would be a good starting point.
+details, the [manual][] of Metropolis would be a good starting point. As we are
+using [Beamer](https://github.com/josephwright/beamer),
+the [user guide of beamer](http://ctan.yazd.ac.ir/macros/latex/contrib/beamer/doc/beameruserguide.pdf) will be helpful
+too.
+
+### File Structure
+
+When user use `\usetheme{gsmaeb}` to using this theme, latex will be searching for `beamerthemegsmaeb.sty`, which is
+generated from `beamerthemegsmaeb.dtx`. In `beamerthemegsmaeb.dtx` the following files are imported:
+
+- `beamercolorthemegsmaeb.dtx`: Defines color related settings.
+- `beamerfontthemegsmaeb.dtx`: Defines font related settings.
+- `beamerinnerthemegsmaeb.dtx`: Defines how contents in each slide are presented.
+- `beamerouterthemegsmaeb.dtx`: Defines format of headers and footers.
+
+In addition, `beamerthemegsmaeb.ins` defines how the above `.ins` files converted into `.sty` files.
+
+In most cases, files mentioned above are everything we might be editing. See more
+at [Design a custom Beamer theme from scratch](https://tex.stackexchange.com/a/146682).
 
 ### Development Workflow
 
