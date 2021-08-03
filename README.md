@@ -45,8 +45,8 @@ The following code shows a minimal example of a Beamer presentation using GsmaeB
 
 ## Development
 
-This theme is based on [Metropolis](https://github.com/matze/mtheme). If you've got more questions about implementation
-details, you could refer to the [manual][] of Metropolis.
+This theme is based on [Metropolis](https://github.com/matze/mtheme). If you've got questions about implementation
+details, the [manual][] of Metropolis would be a good starting point.
 
 ### Development Workflow
 
