@@ -15,7 +15,7 @@ Installing GsmaeB from source, like any Beamer theme, involves four easy steps:
 
 1. **Download the source** with a `git clone` of the [GsmaeB repository](https://github.com/yongzhengqi/gsmaeb).
 2. **Compile the style files** by running `make sty` inside the downloaded directory. (Or run LaTeX directly
-   on `source/metropolistheme.ins`.)
+   on `source/beamerthemegsmaeb.ins`.)
 3. **Move the resulting `*.sty` files** to the folder containing your presentation. To use Metropolis with many
    presentations, run `make install`
    or move the `*.sty` files to a folder in your TeX path instead (might require
