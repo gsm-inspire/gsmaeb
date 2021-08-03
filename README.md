@@ -5,8 +5,6 @@ content; the only visual flourish it offers is an (optional) progress bar added 
 principles of the theme were described in a blog post
 [here](http://bloerg.net/2014/09/20/a-modern-beamer-theme.html).
 
-Not convinced? Have a look at the [demo slides][].
-
 ![Sample](https://gsminspire.com/wp-content/uploads/2021/08/gsmaeb_screenshot.png)
 
 ## Installation
@@ -20,7 +18,7 @@ Installing GsmaeB from source, like any Beamer theme, involves four easy steps:
    presentations, run `make install`
    or move the `*.sty` files to a folder in your TeX path instead (might require
    `sudo` rights).
-4. **Use the theme for your presentation** by declaring `\usetheme{GsmaeB}` in the preamble of your Beamer document.
+4. **Use the theme for your presentation** by declaring `\usetheme{gsmaeb}` in the preamble of your Beamer document.
 5. **For best results** install Mozilla's [Fira Sans](https://github.com/bBoxType/FiraSans).
 
 ## Usage
@@ -57,9 +55,4 @@ a [Creative Commons Attribution-ShareAlike 4.0 International License](http://cre
 This means that if you change the theme and re-distribute it, you *must* retain the copyright notice header and license
 it under the same CC-BY-SA license. This does not affect the presentation that you create with the theme.
 
-
-[demo slides]: http://mirrors.ctan.org/macros/latex/contrib/beamer-contrib/themes/metropolis/demo/demo.pdf
-
 [manual]: http://mirrors.ctan.org/macros/latex/contrib/beamer-contrib/themes/metropolis/doc/metropolistheme.pdf
-
-[CTAN]: http://ctan.org/pkg/beamertheme-metropolis
