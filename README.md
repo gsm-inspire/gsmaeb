@@ -50,7 +50,7 @@ details, you could refer to the [manual][] of Metropolis.
 
 ### Development Workflow
 
-1. Run `git clone https://github.com/yongzhengqi/gsmaeb.git` to clone GitHub repo to local machine.
+1. Run `git clone https://github.com/gsm-inspire/gsmaeb.git` to clone GitHub repo to local machine.
 2. Make some modification on your local machine.
 3. Follow the _Installation_ section to generate `.sty` files and upload them to Overleaf to make sure changes you've
    made is valid.
