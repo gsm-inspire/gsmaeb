@@ -12,7 +12,7 @@
 % \iffalse
 %<*package>
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{beamercolorthememetropolis}[2017/01/23 Metropolis color theme]
+\ProvidesPackage{beamercolorthemegsmaeb}[2017/01/23 GsmaeB color theme]
 %</package>
 % \fi
 % \CheckSum{0}
@@ -39,10 +39,10 @@
 %    |theorem| and |example|.
 %    \begin{macrocode}
 \pgfkeys{
-  /metropolis/color/block/.cd,
+  /gsmaeb/color/block/.cd,
     .is choice,
-    transparent/.code=\metropolis@block@transparent,
-    fill/.code=\metropolis@block@fill,
+    transparent/.code=\gsmaeb@block@transparent,
+    fill/.code=\gsmaeb@block@fill,
 }
 %    \end{macrocode}
 % \end{macro}
@@ -52,19 +52,19 @@
 %    of the reverse.
 %    \begin{macrocode}
 \pgfkeys{
-  /metropolis/color/background/.cd,
+  /gsmaeb/color/background/.cd,
     .is choice,
-    dark/.code=\metropolis@colors@dark,
-    light/.code=\metropolis@colors@light,
+    dark/.code=\gsmaeb@colors@dark,
+    light/.code=\gsmaeb@colors@light,
 }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\metropolis@color@setdefaults}
+% \begin{macro}{\gsmaeb@color@setdefaults}
 %    Sets default values for color theme options.
 %    \begin{macrocode}
-\newcommand{\metropolis@color@setdefaults}{
-  \pgfkeys{/metropolis/color/.cd,
+\newcommand{\gsmaeb@color@setdefaults}{
+  \pgfkeys{/gsmaeb/color/.cd,
     background=light,
     block=transparent,
   }
@@ -91,14 +91,14 @@
 % |alerted text|, and |example text|.
 %
 %    \begin{macrocode}
-\newcommand{\metropolis@colors@dark}{
+\newcommand{\gsmaeb@colors@dark}{
   \setbeamercolor{normal text}{%
     fg=black!2,
     bg=mDarkTeal
   }
   \usebeamercolor[fg]{normal text}
 }
-\newcommand{\metropolis@colors@light}{
+\newcommand{\gsmaeb@colors@light}{
   \setbeamercolor{normal text}{%
     fg=mDarkTeal,
     bg=black!2
@@ -179,7 +179,7 @@
 % if changing colors mid-presentation.
 %
 %    \begin{macrocode}
-\newcommand{\metropolis@block@transparent}{
+\newcommand{\gsmaeb@block@transparent}{
   \setbeamercolor{block title}{%
     use=normal text,
     fg=normal text.fg,
@@ -189,7 +189,7 @@
     bg=
   }
 }
-\newcommand{\metropolis@block@fill}{
+\newcommand{\gsmaeb@block@fill}{
   \setbeamercolor{block title}{%
     use=normal text,
     fg=normal text.fg,
@@ -237,8 +237,8 @@
 % \subsubsection{Process package options}
 %
 %    \begin{macrocode}
-\metropolis@color@setdefaults
-\ProcessPgfPackageOptions{/metropolis/color}
+\gsmaeb@color@setdefaults
+\ProcessPgfPackageOptions{/gsmaeb/color}
 %    \end{macrocode}
 %
 %    \begin{macrocode}
