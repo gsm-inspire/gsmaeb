@@ -7,7 +7,7 @@ principles of the theme were described in a blog post
 
 Not convinced? Have a look at the [demo slides][].
 
-![Sample](http://i.imgur.com/Bxu52fz.png)
+![Sample](https://gsminspire.com/wp-content/uploads/2021/08/gsmaeb_screenshot.png)
 
 ## Installation
 
@@ -29,7 +29,7 @@ The following code shows a minimal example of a Beamer presentation using GsmaeB
 
 ```latex
 \documentclass{beamer}
-\usetheme{gsmaeb}           % Use metropolis theme
+\usetheme{gsmaeb}           % Use GsmaeB theme
 \title{A minimal example}
 \date{\today}
 \author{Gsm Inspire \LaTeX Team}
