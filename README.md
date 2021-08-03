@@ -48,6 +48,16 @@ The following code shows a minimal example of a Beamer presentation using GsmaeB
 This theme is based on [Metropolis](https://github.com/matze/mtheme). If you've got more questions about implementation
 details, you could refer to the [manual][] of Metropolis.
 
+### Development Workflow
+
+1. Run `git clone https://github.com/yongzhengqi/gsmaeb.git` to clone GitHub repo to local machine.
+2. Make some modification on your local machine.
+3. Follow the _Installation_ section to generate `.sty` files and upload them to Overleaf to make sure changes you've
+   made is valid.
+3. Run `git add *` to include all new file you've added locally.
+4. Run `git comment -m {$comment}` to make a summary what changes you've made.
+5. Run `git push -u origin main` to push local changes to GitHub.
+
 ## License
 
 The theme itself is licensed under
